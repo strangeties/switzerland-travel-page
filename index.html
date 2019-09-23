@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script type="text/javascript" src="_main.js?v=1"></script>
+        <link rel="stylesheet" type="text/css" href="main.css?v=<?=time();?">
+            
+            
+        <style>
+            h1 {
+                font-family: Trebuchet;
+                color: #ffffe6;
+            }
+            h2 {
+                font-family: Trebuchet;
+                color: #1a0d00;
+                margin: 10px;
+            }
+            p {
+                font-family: Trebuchet;
+                color: #1a0d00;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            li {
+                font-family: Trebuchet;
+                color: #1a0d00;padding-left: 10px;
+                padding-right: 10px;
+            }
+            img {
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    
+    <title>
+        That Time I Wandered Through Switzerland
+    </title>
+    
+    <body>
+        <button class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        
+        <div class="menu" id="menu">
+            <div class="menu_item_div" id="prelude_button"><a href="#prelude" class="menu_item">Prelude</a></div>
+            <div class="menu_item_div" id="anticipation_button"><a href="#anticipation" class="menu_item">Anticipation</a></div>
+            <div class="menu_item_div" id="second_impressions_button"><a href="#second_impressions" class="menu_item">Second Impressions</a></div>
+            <div class="menu_item_div" id="wwjd_button"><a href="#wwjd" class="menu_item">WWJD?</a></div>
+            <div class="menu_item_div" id="small_connections_button"><a href="#small_connections" class="menu_item">Small Connections</a></div>
+            <div class="menu_item_div" id="small_discoveries_button"><a href="#small_discoveries" class="menu_item">Small Discoveries</a></div>
+            <div class="menu_item_div" id="small_moments_button"><a href="#small_moments" class="menu_item">Small Moments</a></div>
+            <div class="menu_item_div" id="the_roots_hat_button"><a href="#the_roots_hat" class="menu_item">The Roots Hat</a></div>
+            <div class="menu_item_div" id="journeys_end_button"><a href="#journeys_end" class="menu_item">Journey's End</a></div>
+        </div>
+        
+        <a href="#head" class="hat" id="hat">^</a>
+        
+        <a name="head"></a>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/title.jpg');">
+            
+            <div style="position: absolute; bottom: 0;
+                width: 100%;
+                background: rgba(0,51,102, 0.5);">
+                <div style="padding: 10px;">
+                <h1>That Time I Wandered Through Switzerland</h1>
+                </div>
+            </div>
+        </div>
+        
+        <a name="prelude"></a>
+        <div id="prelude" w3-include-html="sections/prelude.html" class="story")></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/prelude.jpg'); height: 80%;"></div>
+        
+        <a name="anticipation"></a>
+        <div id="anticipation" w3-include-html="sections/anticipation.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/anticipation/airplane.jpg'); height: 80%;"></div>
+        
+        <a name="second_impressions"></a>
+        <div id="second_impressions" w3-include-html="sections/second_impressions.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/second_impressions/crowds.jpg'); height: 80%;"></div>
+        
+        <a name="wwjd"></a>
+        <div id="wwjd" w3-include-html="sections/wwjd.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/wwjd/sunset.jpg'); height: 80%;"></div>
+        
+        <a name="small_connections"></a>
+        <div id="small_connections" w3-include-html="sections/small_connections.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/small_connections/parasailor.jpg'); height: 80%;"></div>
+        
+        <a name="small_discoveries"></a>
+        <div id="small_discoveries" w3-include-html="sections/small_discoveries.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/small_discoveries/trumpet.jpg'); height: 80%;"></div>
+        
+        <a name="small_moments"></a>
+        <div id="small_moments" w3-include-html="sections/small_moments.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/small_moments/rooftops.jpg'); height: 80%;"></div>
+        
+        <a name="the_roots_hat"></a>
+        <div id="the_roots_hat" w3-include-html="sections/the_roots_hat.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/the_roots_hat/costumes.jpg'); height: 80%;"></div>
+        
+        <a name="journeys_end"></a>
+        <div id="journeys_end" w3-include-html="sections/journeys_end.html" class="story"></div>
+        <div class="parallax_bg"
+            style="background-image: url('imgs/journeys_end/me2.jpg'); height: 100%;"></div>
+        
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
+</html>
